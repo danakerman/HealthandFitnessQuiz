@@ -1,0 +1,157 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="LayoutMain" >
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@android:color/holo_green_dark</item>
+        <item name="android:fillViewport">true</item>
+        <item name="android:padding">20dp</item>
+    </style>
+
+    <style name="LinearLayout" >
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">vertical</item>
+
+    </style>
+
+    <style name="LinearLayoutAlt" >
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">255dp</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="EditTextName">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:textColor">#E0F7FA</item>
+        <item name="android:imeOptions">actionDone</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:inputType">none</item>
+    </style>
+
+    <style name="MainHeading" >
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:text">@string/app_name</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:textColor">#E0F7FA</item>
+        <item name="android:textSize">50sp</item>
+    </style>
+
+    <style name="ImageNormal">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">255dp</item>
+        <item name="android:paddingTop">40dp</item>
+        <item name="android:layout_gravity">center</item>
+
+    </style>
+
+    <style name="HeadingText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">40dp</item>
+        <item name="android:paddingBottom">40dp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">#E0F7FA</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="HeadingImage">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <style name="Text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:textColor">#E0F7FA</item>
+
+    </style>
+
+    <style name="TextAnswerText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:textColor">#E0F7FA</item>
+        <item name="android:imeOptions">actionDone</item>
+    </style>
+
+    <style name="EditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:textColorHint">@android:color/background_light</item>
+        <item name="android:textColor">#E0F7FA</item>
+        <item name="android:inputType">textCapWords</item>
+
+    </style>
+
+    <style name="RadioGroup">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:paddingBottom">40dp</item>
+    </style>
+
+    <style name="RadioGroupHor">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:paddingBottom">40dp</item>
+    </style>
+
+    <style name="RadioButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:buttonTint">#E0F7FA</item>
+        <item name="android:textColor">#E0F7FA</item>
+    </style>
+
+    <style name="RadioButtonHor">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:buttonTint">#E0F7FA</item>
+        <item name="android:textColor">#E0F7FA</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="CheckBox">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:buttonTint">#E0F7FA</item>
+        <item name="android:textColor">#E0F7FA</item>
+    </style>
+
+
+    <style name="Button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">40dp</item>
+        <item name="android:layout_marginBottom">40dp</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+</resources>
+

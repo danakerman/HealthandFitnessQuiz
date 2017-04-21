@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">Health and Fitness Quiz</string>
+    <string name="opening">How much do you know about health and Fitness?</string>
+    <string name="name">Hey! What\'s Your Name?</string>
+    <string name="nameInput">Enter Your Name Here!</string>
+    <string name="q1">1. Exercise alone will help you lose weight</string>
+    <string name="q1a1" translatable="false">True</string>
+    <string name="q1a2" translatable="false">False</string>
+    <string name="q2">2. How many calories to you need to burn to lose 1 pound of fat?</string>
+    <string name="q2a1" translatable="false">350</string>
+    <string name="q2a2" translatable="false">3500</string>
+    <string name="q2a3" translatable="false">5000</string>
+    <string name="q3">3. Should you apply ice if you think you\'ve injured a muscle?</string>
+    <string name="q3a1" translatable="false">No, just rest it</string>
+    <string name="q3a2" translatable="false">No, apply heat immediately</string>
+    <string name="q3a3" translatable="false">Yes, apply ice immediately</string>
+    <string name="q4">4. What is the biggest muscle in the human body</string>
+    <string name="q4a1">Type Your Answer Here</string>
+    <string name="q5">5. Which organ produces insulin?</string>
+    <string name="q5a1">Type Your Answer Here</string>
+    <string name="q6">6. Which of these are the best for weightloss? (Select two);</string>
+    <string name="q6a1">High Intensity Workout</string>
+    <string name="q6a2">Steady Cardio</string>
+    <string name="q6a3">Weight Lifting</string>
+    <string name="q7">7. What percentage fat should a healthy male\'s body have?</string>
+    <string name="q7a1" translatable="false">4 To 9 Percent</string>
+    <string name="q7a2" translatable="false">12 To 18 Percent</string>
+    <string name="q7a3" translatable="false">20 To 25 Percent</string>
+    <string name="q8">8. Which provide the body with the most iron?</string>
+    <string name="q8a1" translatable="false">Spinach</string>
+    <string name="q8a2" translatable="false">Steak</string>
+    <string name="q8a3" translatable="false">Tofu</string>
+    <string name="q9">9. Which of these are good sources of protein? (Check all that apply);</string>
+    <string name="q9a1">Eggs</string>
+    <string name="q9a2" translatable="false">Tuna</string>
+    <string name="q9a3">Pasta</string>
+    <string name="q10">10. Which sanck contains themost salt?</string>
+    <string name="q10a1" translatable="false">Crisps</string>
+    <string name="q10a2" translatable="false">Olives</string>
+    <string name="q10a3" translatable="false">Pistachios</string>
+    <string name="finalScore">Final Score</string>
+    <string name="hi" translatable="false">Hi\u0020</string>
+    <string name="youScored">! You scored\u0020</string>
+    <string name="outOfTen">\u0020out of 10!</string>
+    <string name="low">Oh dear</string>
+    <string name="mid">Not bad</string>
+    <string name="high">Good job</string>
+</resources>
+

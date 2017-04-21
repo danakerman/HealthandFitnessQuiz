@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    style="@style/LayoutMain">
+
+    <LinearLayout
+        style="@style/LinearLayout"
+        tools:context="com.example.android.healthandfitnessquiz.MainActivity">
+
+        <TextView style="@style/MainHeading" />
+
+        <ImageView
+            style="@style/HeadingImage"
+            android:src="@drawable/icon" />
+
+
+        // Request for user name
+
+        <TextView
+            style="@style/HeadingText"
+            android:text="@string/opening" />
+
+
+        //User input's their name
+
+        <EditText
+            android:id="@+id/name_field"
+            style="@style/EditTextName"
+            android:hint="@string/nameInput" />
+
+
+        // Q1 - Heading
+        // Q1 Image
+
+        <ImageView
+            style="@style/ImageNormal"
+            android:src="@drawable/runner" />
+
+        // Q1 Will excercise alone will help lose weight
+
+        <TextView
+            style="@style/Text"
+            android:layout_width="match_parent"
+            android:text="@string/q1" />
+
+        // Q1 True or False
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            style="@style/RadioGroupHor"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/Q1A1"
+                style="@style/RadioButton"
+                android:onClick="question1"
+                android:text="@string/q1a1" />
+
+            <View
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <RadioButton
+                android:id="@+id/Q1A2"
+                style="@style/RadioButton"
+                android:text="@string/q1a2" />
+
+            <View
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+        </RadioGroup>
+
+
+        // Q2 - Heading
+        // Q2 Image
+
+        <ImageView
+            style="@style/ImageNormal"
+            android:layout_height="215dp"
+            android:src="@drawable/calories" />
+
+        // Q2 How many calories is 1lb of fat?
+
+        <TextView
+            style="@style/Text"
+            android:text="@string/q2" />
+
+        // Q2 350, 3500 or 5000
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            style="@style/RadioGroup">
+
+            <RadioButton
+                android:id="@+id/Q2A1"
+                style="@style/RadioButton"
+                android:text="@string/q2a1" />
+
+            <RadioButton
+                android:id="@+id/Q2A2"
+                style="@style/RadioButton"
+                android:onClick="question2"
+                android:text="@string/q2a2" />
+
+            <RadioButton
+                android:id="@+id/Q2A3"
+                style="@style/RadioButton"
+                android:text="@string/q2a3" />
+        </RadioGroup>
+
+
+        // Q3 - Heading
+        // Q3 Image
+
+        <ImageView
+            style="@style/ImageNormal"
+            android:src="@drawable/muscle" />
+
+        // Q3 Should you apply ice if you think you've injured a muscle?
+
+        <TextView
+            style="@style/Text"
+            android:text="@string/q3" />
+
+        // Q3 Nothing, Heat or Yes
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            style="@style/RadioGroup">
+
+            <RadioButton
+                android:id="@+id/Q3A1"
+                style="@style/RadioButton"
+                android:text="@string/q3a1" />
+
+            <RadioButton
+                android:id="@+id/Q3A2"
+                style="@style/RadioButton"
+                android:text="@string/q3a2" />
+
+            <RadioButton
+                android:id="@+id/Q3A3"
+                style="@style/RadioButton"
+                android:onClick="question3"
+                android:text="@string/q3a3" />
+        </RadioGroup>
+
+
+        // Q4 - Heading
+        // Q4 Image
+
+        <ImageView
+            style="@style/ImageNormal"
+            android:src="@drawable/muscles" />
+
+        // Q4 Largest muscle in the body
+
+        <TextView
+            style="@style/TextAnswerText"
+            android:text="@string/q4" />
+
+        // Q4 Input text answer to match Gluteus Maximus
+
+        <EditText
+            android:id="@+id/Q4A1"
+            style="@style/EditText"
+            android:hint="@string/q4a1"
+            android:maxLines="1"
+            android:onClick="question4" />
+
+
+        // Q5 - Heading
+        // Q5 Image
+
+        <ImageView
+            style="@style/ImageNormal"
+            android:src="@drawable/insulin" />
+
+        // Q5 Which organ produces insulin?
+
+        <TextView
+            style="@style/TextAnswerText"
+            android:text="@string/q5" />
+
+        // Q5 Input text answer to match Pancreas
+
+        <EditText
+            android:id="@+id/Q5A1"
+            style="@style/EditText"
+            android:hint="@string/q5a1"
+            android:maxLines="1"
+            android:onClick="question5" />
+
+
+        // Q6- Heading
+        // Q6 Image
+
+        <ImageView
+            style="@style/ImageNormal"
+            android:src="@drawable/weightloss" />
+
+        // Q6 Best for weightloss
+
+        <TextView
+            style="@style/Text"
+            android:text="@string/q6" />
+
+        // Question 6 checkbox 1
+
+        <CheckBox
+            android:id="@+id/option1"
+            style="@style/CheckBox"
+            android:onClick="question6"
+            android:text="@string/q6a1" />
+
+        // Question 6 checkbox 2
+
+        <CheckBox
+            android:id="@+id/option2"
+            style="@style/CheckBox"
+            android:onClick="question6"
+            android:text="@string/q6a2" />
+
+        // Question 6 checkbox 3
+
+        <CheckBox
+            android:id="@+id/option3"
+            style="@style/CheckBox"
+            android:onClick="question6"
+            android:text="@string/q6a3" />
+
+
+        // Q7 - Heading
+        // Q7 Image
+
+        <ImageView
+            style="@style/ImageNormal"
+            android:src="@drawable/fat_percentage" />
+
+        // Q7 What percentage fat should a male have?
+
+        <TextView
+            style="@style/Text"
+            android:text="@string/q7" />
+
+        // Q7 Answers
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            style="@style/RadioGroup">
+
+            <RadioButton
+                android:id="@+id/Q7A1"
+                style="@style/RadioButton"
+                android:text="@string/q7a1" />
+
+            <RadioButton
+                android:id="@+id/Q7A2"
+                style="@style/RadioButton"
+                android:onClick="question7"
+                android:text="@string/q7a2" />
+
+            <RadioButton
+                android:id="@+id/Q7A3"
+                style="@style/RadioButton"
+                android:text="@string/q7a3" />
+        </RadioGroup>
+
+
+        // Q8 - Heading
+
+        <TextView
+            style="@style/Text"
+            android:layout_width="wrap_content"
+            android:text="@string/q8" />
+
+        <LinearLayout style="@style/LinearLayout"></LinearLayout>
+        // Q8 Image
+
+        <LinearLayout style="@style/LinearLayoutAlt">
+
+            <ImageView
+                style="@style/ImageNormal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:scaleType="center"
+                android:src="@drawable/spinach" />
+
+            <ImageView
+                style="@style/ImageNormal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:scaleType="center"
+                android:src="@drawable/steak" />
+
+            <ImageView
+                style="@style/ImageNormal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:scaleType="center"
+                android:src="@drawable/tofu" />
+        </LinearLayout>
+
+
+        // Q8 Text
+
+        <LinearLayout style="@style/LinearLayout">
+
+
+            // Q8 Answers
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                style="@style/RadioGroup"
+                android:layout_width="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/Q8A1"
+                    style="@style/RadioButton"
+                    android:text="@string/q8a1" />
+
+                <RadioButton
+                    android:id="@+id/Q8A2"
+                    style="@style/RadioButton"
+                    android:onClick="question8"
+                    android:text="@string/q8a2" />
+
+                <RadioButton
+                    android:id="@+id/Q8A3"
+                    style="@style/RadioButton"
+                    android:text="@string/q8a3" />
+            </RadioGroup>
+
+            <View
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+
+        </LinearLayout>
+
+
+        // Q9 - Best source of protein?
+        // Q9 Text
+
+        <ImageView
+            style="@style/ImageNormal"
+            android:src="@drawable/protein" />
+
+        <TextView
+            style="@style/Text"
+            android:text="@string/q9" />
+
+        // Question 9 checkbox 1
+
+        <CheckBox
+            android:id="@+id/object1"
+            style="@style/CheckBox"
+            android:onClick="question9"
+            android:text="@string/q9a1" />
+
+        // Question 9 checkbox 2
+
+        <CheckBox
+            android:id="@+id/object2"
+            style="@style/CheckBox"
+            android:onClick="question9"
+            android:text="@string/q9a2" />
+
+        // Question 9 checkbox 3
+
+        <CheckBox
+            android:id="@+id/object3"
+            style="@style/CheckBox"
+            android:onClick="question9"
+            android:text="@string/q9a3" />
+
+
+        // Q10 - Heading
+        // Q10 Image
+
+        <ImageView
+            style="@style/ImageNormal"
+            android:src="@drawable/salt" />
+
+        // Q10 Which is the most salty snack
+
+        <TextView
+            style="@style/Text"
+            android:text="@string/q10" />
+
+        // Q10 Answers
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            style="@style/RadioGroup">
+
+            <RadioButton
+                android:id="@+id/Q10A1"
+                style="@style/RadioButton"
+                android:text="@string/q10a1" />
+
+            <RadioButton
+                android:id="@+id/Q10A2"
+                style="@style/RadioButton"
+                android:onClick="question10"
+                android:text="@string/q10a2" />
+
+            <RadioButton
+                android:id="@+id/Q10A3"
+                style="@style/RadioButton"
+                android:text="@string/q10a3" />
+        </RadioGroup>
+
+
+        // Final Score
+
+        <Button
+            style="@style/Button"
+            android:layout_gravity="center"
+            android:onClick="finalScore"
+            android:text="@string/finalScore" />
+
+    </LinearLayout>
+</ScrollView>
